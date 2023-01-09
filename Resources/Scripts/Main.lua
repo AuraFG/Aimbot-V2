@@ -34,13 +34,13 @@ local queueonteleport = queue_on_teleport or syn.queue_on_teleport
 --// Script Settings
 
 Environment.Settings = {
-	SendNotifications = true,
-	SaveSettings = true, -- Re-execute upon changing
-	ReloadOnTeleport = true,
+	SendNotifications = false,
+	SaveSettings = false, -- Re-execute upon changing
+	ReloadOnTeleport = false,
 	Enabled = true,
 	TeamCheck = false,
 	AliveCheck = true,
-	WallCheck = false, -- Laggy
+	WallCheck = true, -- Laggy
 	Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
 	ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 	ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
